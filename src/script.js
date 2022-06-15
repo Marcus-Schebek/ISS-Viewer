@@ -14,7 +14,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.marker([latitude, longitude]).addTo(map)
-    .bindPopup('O satélite da ISS está sobrevoando esta região')
+    .bindPopup('The ISS satellite is flying over this region')
     .openPopup();
 }) ();
 
