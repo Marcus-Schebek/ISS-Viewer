@@ -1,12 +1,12 @@
 
 
 (async function takeCoordenates (){
-    const url = `http://api.open-notify.org/iss-now.json`;
+    const url = `https://api.wheretheiss.at/v1/satellites/25544`;
     const data = await fetch(url);
     const coordenates = await data.json();
     
-    var latitude = coordenates.iss_position.latitude;
-    var longitude = coordenates.iss_position.longitude;
+    var latitude = coordenates.latitude;
+    var longitude = coordenates.longitude;
     
     var map = L.map('map').setView([latitude, longitude], 1.5);
 
