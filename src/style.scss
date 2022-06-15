@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+}
+aside{
+    background-color: #212738;
+    color: #F5F3F5;
+    display: flex;
+    flex: 5;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-size: 48px;
+        margin: 0 0.5em;
+    }
+        footer{
+            position: fixed;
+            font-weight: 600;
+            margin: 1em 0;
+            bottom: 0;
+            left: 8%;
+          
+        }
+}
+
+
+
+#map{
+    height: 100vh;
+    width: 50%;
+    flex: 10;
+}
+
+@media screen and (max-width: 960px) {
+    aside{
+      display: none;
+      z-index: 0;
+    }
+    #map{
+        height: 100vh;
+        width: 100vh;
+        z-index: 5;
+    }
+}
